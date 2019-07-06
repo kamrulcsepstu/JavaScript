@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Push and pop function in array in javascript</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		//******************************************************************************************************//
+
+		//push() function is used to add an element to the array.
+		//lets create an array first.Then  we will add an element to it using push() function.
+		var myArray = ["Kamrul", 1502025, '06213'];
+
+		//there are three elements in the array.
+		//lets see the output first.
+		console.log(myArray);
+
+		//now lets use the push() function to add an extra element to the array
+		myArray.push("CSE");
+
+		//lets see the output now
+		console.log(myArray);
+
+		//if we want to add multiple elements to ouy array then we should follow the structure below
+		// myArray.push(element1, element2, element3,.....elementN);
+
+		/******************************************************************************************************/
+
+		/******************************************************************************************************/
+
+		//now lets see the usage of pop() function.
+		//fisrt use pop() function to myArray directly.
+		//lets see what happens!!!
+		myArray.pop(myArray);
+
+		//lets see our array now!
+		console.log(myArray);
+
+		//WOW!! last element of the array is deleted!!
+		//that means pop() function is used to delete or remove the elements of the array.
+		//by default, it remove the last element of an array
+		//can we remove any of the element of the array by using pop() function??
+		//lets check!!
+
+		myArray.pop(myArray[1]);
+
+		//lets see the current array
+		console.log(myArray);
+
+
+		//Oh no!! pop() function can't remove any of the elements from array!
+		//it removes the last element only
+		
+
+		/******************************************************************************************************/
+
+		/******************************************************************************************************/
+
+		//we can see any of the values dynamically after or before pushing.
+		//we can find the length of the array too! 
+		//before that, lets create an array first.
+		var myArray2 = ["Hasan", 282, "Govt. Science College", "Dhaka", "Bangladesh"];
+
+		//lets see the output in console first
+		console.log(myArray2);
+
+		////lets find the length of the array
+		console.log(myArray2.length);
+		
+		//we can find any of the element of the array!
+		console.log(myArray2[myArray2.length - 3]);
+
+		//lets push an element!
+		myArray2.push("Asia");
+
+		//lets check the size now!
+		console.log(myArray2.length);
+
+		//see the current output in console! have fun.
+		console.log(myArray2);
+
+		//******************************************************************************************************//
+
+		//******************************************************************************************************//
+
+		//now, lets pop the last element from the array
+		console.log(myArray2.length);
+		myArray2.pop(myArray2);
+		console.log(myArray2);
+
+
+		//******************************************************************************************************//
+
+	</script>
+</body>
+</html>

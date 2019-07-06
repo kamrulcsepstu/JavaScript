@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Function in JavaScript</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		//sometimes, we need to pass some values to our function
+		//how can we do that??
+		//lets see
+		function myFun(arg1){
+			console.log("You have passed " + arg1);
+		}
+		//here, we have crated a function named myFun with an argument
+		//we have set a command to show the output with the passed value in the function
+		//lets call our function first.
+		myFun("Hello");
+		//that means if we want to pass any value to our function then  we can do it simply.
+		//now the question is "can we pass more than one values?"
+		//lets check it right now
+		myFun("Hello", "World!");
+		//oh!! we are not getting our expected output!
+		//so whats wrong??
+		//we have made a mistake here.
+		//and that is we declared that we have only one argument when we created our function
+		//but we are trying to pass two arguments!
+		//so its illogical to see the two passed values in output
+		//then how can we do that?
+		//lets see
+		function myFun2(arg1, arg2){
+			console.log("You have passed " + arg1 + " and " + arg2);
+		}
+		myFun2("Hello", "World!!");
+		//we can pass any number of values in this way.
+	</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>toString() Function of Array in JavaScript</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		//toString() function is used to make array elements string
+		//lets create teo arras first
+		//then we will look up how this can happen
+		var myArray1 = [true, "hi", '06213', 1, 25, 3, 4 ];
+		var myArray2 = ["Kamrul", "CSE", "PSTU"];
+
+		//lets check the output first
+		console.log(myArray1);
+		console.log(myArray2);
+
+		//now lets take a variable to put the values of the arrays!
+		var values1 = myArray1.toString(myArray2);
+		//now lets check the output
+		console.log(values1);
+		//wow!! values from myArray1 became string!!
+		
+		//if we want to make the elements string from myArray2 then we also can do that simply
+		var values2 = myArray2.toString();
+		//now check the output
+		console.log(values2);
+		
+	</script>
+</body>
+</html>

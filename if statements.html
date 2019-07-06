@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>If statem,ents in JavaScript</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		// this is a simple program to vfind a number even or odd
+		// we need to get the number first.
+		//so we are going to prompt the users to give us the number.
+		//the number given by the users should be stored in a variable to check it is even or odd later.
+		//so lets declare the variable first and prompt the users.
+
+		var myPrompt;
+
+		//now lets prompt the users and put the value in the declared variable
+
+		myPrompt = prompt("Enter a number to check it is even or odd: ");
+
+		//we have the value now. we need to write a logic to check the number is even or odd
+		//lets write the logic!
+
+		if(myPrompt % 2 == 0){
+			alert("You have inputted an EVEN number!!");
+		}
+		else{
+			alert("You have inputted an ODD number!!");
+		}
+	</script>
+</body>
+</html>

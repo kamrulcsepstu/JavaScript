@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>indexOf() Function of Array in JavaScript</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		//sometimes we don't know the position or the location of an item in array.i.e an array with huge elements.in that case, we face trouble to find the exact location of any item.in this case, indexOf() function is a great solution.
+		//indexOf() function is used to find the location of any item in the array
+		//so first lets create an array
+		//then we will use indexOf() function and check what happens!
+		var myArray = ["Kamrul", "Hasan", 1502025, '06213', "CSE", "PSTU"];
+
+		//lets see the output now.
+		console.log(myArray);
+
+		//now, suppose, i want to know the location of 06213 in the array.
+		//lets use indexOf() function to do that
+		console.log(myArray.indexOf('06213'));
+
+		//cool, we have got the output 3
+		//that means the position of the array is 3
+		//the location gives us the information that 06213 is the fourth element of the array
+
+		//so, if we want to know location of an item of an array, we can use indexOf() function simply.
+
+
+		/*myArray.forEach(function(i,k){
+			console.log(i + " " + k)
+		})*/
+	</script>
+</body>
+</html>

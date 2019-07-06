@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>slice() Function of Array in JavaScript</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		//slice() function is used to find a slice or a part of the elements of an array
+		//lets create teo arras first 
+		var myArray1 = [true, "hi", '06213', 1, 25, 3, 4 ];
+		
+		//lets check the output first
+		console.log(myArray1);
+		
+		//now lets take a variable to put the values after slicing
+		var values = myArray1.slice(1, 2);
+		//now lets check the output
+		console.log(values);
+		//the output is showing us an array containing the second item of myArray1
+		//that means slice() function is outputting us the value of myArray1[1]
+		//slice() function is not showing us the value of myArray1[2]
+		//so whats the purpose of 2 in slice() function??
+		//lets check it by replacing 2 with 3
+		var values1 = myArray1.slice(1, 3);
+		//now check the output
+		console.log(values1);
+		//wow!! slice() function is showing us the values start from myArray1[1] to myArray1[2]
+		//that means 3 is the end point here
+		//slicing started from myArray[1] and ends in myArray1[2]
+		//myArray1[0], myArray1[3], myArray1[4], myArray1[5] and myArray1[6] is hidden or nremoved from the output!!
+		//this is how slice() function is used for showing a part of elements from an array.
+	</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>forEach() Function of Array in JavaScript</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		//sometimes we don't know the position or the location of an item in array.i.e an array with huge elements.in that case, we face trouble to find the exact location of any item.in this case, forEach() function is a great solution.
+		//forEach() function is used to find the location of any item in the array
+		//so first lets create an array
+		//then we will use indexOf() function and check what happens!
+		var myArray = ["Kamrul", "Hasan", 1502025, '06213', "CSE", "PSTU"];
+
+		//lets see the output now.
+		console.log(myArray);
+
+		//now, suppose, i want to know the location of 06213 in the array.
+		//lets use forEach() function to do that
+		myArray.forEach(function(i,k){
+			console.log(i + " " + k);
+		})
+
+		//oops!! forEach() function is giving  us the item and its position in one row!!
+		//this is cool! we can see any items and its position by using forEach() function
+		//we are also noticing that the i and k is undefined! but we are getting the result correctly!!
+		//how this is happening i don't know!!
+		//may be forEach() function does not require i and k to be defined!
+		//so lets check replacing the value i and k with the value description and position
+		myArray.forEach(function(description,position){
+			console.log(description + " " + position);
+		})
+		//oh man! that is working too! 
+		//that means forEach() function does not require defined values to do some operation!!
+		//will this occur any secuirity issue??
+		//i don't know.
+		//may be i will know it later.
+		//but currently i am in love with forEach() function! 
+	</script>
+</body>
+</html>

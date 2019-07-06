@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>splice() Function of Array in JavaScript</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<script>
+		//splice() function is used to remove any of the items from an array.
+		//so first lets create an array
+		//then we will remove its elements from anywhere of the array
+		var myArray = ["Kamrul", "Hasan", 1502025, '06213', "CSE", "PSTU"];
+
+		//lets see the output now.
+		console.log(myArray);
+
+		//cool!! now lets use the splice() function
+		myArray.splice(2,1);
+
+		//lets check what is changed!!
+		console.log(myArray);
+
+		//oops!!! the third element of the array is removed!!!
+		//spice(2,1) is our  used function. 
+		//here 2 means the third element
+		//but what is the meaning of 1 here??
+		//lets check by putting 2 replacing 1 in splice() function
+		myArray.splice(1,2);
+
+		//lets see what happened!!!
+		console.log(myArray);
+
+		//wow!! second and third elements of the array are removed!!!
+		//that means that 2 is the number of items to remove
+		//and the 1 is the position of the element from which removing data will be started!! 
+
+	</script>
+</body>
+</html>
