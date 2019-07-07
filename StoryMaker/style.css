@@ -1,0 +1,11 @@
+.container{
+	min-width: 80%;
+	min-height: 10%;
+	background-color: blueviolet;
+}
+.container h1{
+	color: beige;
+}
+#content{
+	color: beige;
+}
