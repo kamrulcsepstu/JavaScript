@@ -1,0 +1,28 @@
+body{
+	background-image: linear-gradient(to left,#090979,#e1b0cf)
+}
+.container{
+	box-shadow: 0px 0px 10px 10px azure;
+	background-color: ;
+	background-image: linear-gradient( to right,#090979,#e1b0cf);
+	opacity: ;
+	width: 50%;
+	height: 140px;
+	color: aliceblue;
+	margin-top: 18%;
+	margin-left: 25%;
+	border-radius: 90px 10px 90px 20px;
+	text-align: center;
+}
+input{
+	background-color: beige;
+	width: 40%;
+	font-size:20px;
+	border-radius: 20px 3px 20px 3px;
+}
+button{
+	background-color: burlywood;
+	font-size: 20px;
+	border-radius: 20px 3px 20px 3px;
+}
+

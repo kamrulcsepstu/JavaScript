@@ -1,0 +1,27 @@
+.container{
+	background: linear-gradient(to right, blueviolet, violet);
+	width: 60%;
+	height: 300px;
+	color: aliceblue;
+}
+
+ul li{
+	list-style: none;
+	line-height: 1.5em;
+}
+input{
+	margin-top: 1%;
+	margin-left: 5%;
+	background-color: aliceblue;
+	font-size: 20px;
+	border-radius: 20px 10px 20px 5px;
+	text-align: center;
+}
+button{
+	background-color: antiquewhite;
+	font-size: 20px;
+	border-radius: 20px 10px 20px 5px;
+}
+button:hover{
+	box-shadow: 1px 1px 1px 1px azure ;
+}
